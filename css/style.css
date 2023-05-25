@@ -1,9 +1,16 @@
 body {
-  background-color: lightgray;
+  background-color: lightblue;
 }
 .judul {
   text-align: center;
   margin-top: 5%;
+}
+.container {
+  margin: 20px;
+  border-radius: 20px;
+  background-color: #41436a;
+  padding: 20px;
+  color: #fe9677;
 }
 img {
   object-fit: cover;
@@ -18,7 +25,7 @@ img {
   gap: 20px;
 }
 .card {
-  background-color: rebeccapurple;
+  background-color: #f64668;
   width: 50px;
   min-height: 100px;
   color: transparent;
@@ -27,4 +34,17 @@ img {
   display: flex;
   justify-content: center;
   gap: 20px;
+  z-index: 1;
+}
+.fade button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+button {
+  border-radius: 10px;
+  background-color: #f64668;
+  color: white;
+  height: 20%;
+  font-weight: bold;
+  padding: 10px;
 }

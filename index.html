@@ -27,9 +27,12 @@
         // Fade
         $(document).ready(function () {
             $("#fadein").click(function () {
-                $("#div1").fadeIn();
+                $("#div1").fadeIn("slow");
                 $("#div2").fadeIn("slow");
                 $("#div3").fadeIn(1000);
+                // $("#div1").fadeTo("slow", 1);
+                // $("#div2").fadeTo("slow", 1);
+                // $("#div3").fadeTo("slow", 1);
             });
         });
         $(document).ready(function () {
