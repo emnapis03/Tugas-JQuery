@@ -1,0 +1,11 @@
+.judul {
+  text-align: center;
+  margin-top: 5%;
+}
+img {
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+  display: block;
+  margin: auto;
+}
