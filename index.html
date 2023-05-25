@@ -13,10 +13,13 @@
             $(".sembunyi").click(function () {
                 $("img").hide(1000);
             });
+            $(".tampilkan").click(function () {
+                $("img").show(1000);
+            });
         });
         $(document).ready(function () {
-            $(".tampilkan").click(function () {
-                $("img").toggle("show");
+            $("button").dblclick(function () {
+                $(this).css("color", "red");
             });
         });
     </script>
@@ -37,7 +40,10 @@
             <img src="https://i.pinimg.com/originals/20/8f/4d/208f4df68e6c1c01cbf5bc86a18a0bd1.jpg" alt="">
             <!-- </div> -->
         </div>
-        <div class="double"></div>
+        <div class="double">
+            <h3>Tombol Double Click</h3>
+            <button>Klik Saya</button>
+        </div>
         <div class="fade"></div>
     </div>
 </body>
