@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="jquery-3.7.0.js"></script>
     <script>
+        // Sembunyi
         $(document).ready(function () {
             $(".sembunyi").click(function () {
                 $("img").hide(1000);
@@ -17,9 +18,32 @@
                 $("img").show(1000);
             });
         });
+        // Double
         $(document).ready(function () {
-            $("button").dblclick(function () {
-                $(this).css("color", "red");
+            $(".card").dblclick(function () {
+                $(this).css("background-color", "red");
+            });
+        });
+        // Fade
+        $(document).ready(function () {
+            $("#fadein").click(function () {
+                $("#div1").fadeIn();
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(1000);
+            });
+        });
+        $(document).ready(function () {
+            $("#fadeout").click(function () {
+                $("#div1").fadeOut();
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut(1000);
+            });
+        });
+        $(document).ready(function () {
+            $("#fadeto").click(function () {
+                $("#div1").fadeTo("slow", 0.3);
+                $("#div2").fadeTo("slow", 0.3);
+                $("#div3").fadeTo("slow", 0.3);
             });
         });
     </script>
@@ -33,7 +57,7 @@
     </div>
     <div class="container">
         <div class="sembunyii">
-            <h3>Tombol Sembunyi</h3>
+            <h3>1. Tombol Sembunyi</h3>
             <button class="sembunyi">Sembunyikan</button>
             <button class="tampilkan">Tampilkan</button>
             <!-- <div class="gambar" id="gambar"> -->
@@ -41,10 +65,25 @@
             <!-- </div> -->
         </div>
         <div class="double">
-            <h3>Tombol Double Click</h3>
-            <button>Klik Saya</button>
+            <h3>2. Tombol Double Click</h3>
+            <p>Double klik pada object maka akan berubah warna</p>
+            <div class="row">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
         </div>
-        <div class="fade"></div>
+        <div class="fade">
+            <h3>3. Tombol Fade</h3>
+            <button id="fadein">Fade In</button>
+            <button id="fadeout">Fade Out</button>
+            <button id="fadeto">Fade To</button>
+            <div class="kotak">
+                <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+                <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+                <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+            </div>
+        </div>
     </div>
 </body>
 
