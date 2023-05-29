@@ -40,11 +40,23 @@ img {
   margin-right: 10px;
   margin-bottom: 10px;
 }
+
+.sembunyii button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
 button {
   border-radius: 10px;
   background-color: #f64668;
   color: white;
   height: 20%;
+  border: 0;
   font-weight: bold;
   padding: 10px;
+  box-shadow: 0px 0px 5px black;
+}
+button:hover {
+  background-color: #41436a;
+  color: #fe9677;
+  transform: scale(1.2);
 }
